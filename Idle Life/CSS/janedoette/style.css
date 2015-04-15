@@ -1,0 +1,31 @@
+*{
+	box-sizing:border-box;
+}
+body{
+	font-family: 'Lato', arial, helvetica, sans-serif;
+	color:#747704;
+	font-weight: 400;
+}
+hr{
+	border:2px solid #cfcfcf;
+}
+.text-muted{
+	color: #BCBBBB;
+}
+.text-thin{
+	font-weight: 300;
+}
+.larger{
+	font-size: 5em;
+}
+#logo{
+	padding-top: 25px;
+}
+.no-button{
+	border:none;
+	background-color: transparent;
+}
+.center{
+	text-align: center;
+}
+

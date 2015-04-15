@@ -1,0 +1,33 @@
+*{
+	box-sizing:border-box;
+}
+body{
+	background-color: #eee;
+}
+li{
+	list-style: none;
+	display:inline;
+	padding-left: 50px;
+}
+#game-window{
+	height:750px;
+	background-color: #fff;
+	border-radius: 1.5em;
+	margin-top: 50px;
+}
+.border-reg{
+	box-shadow: 5px 5px 10px #ddd; 
+}
+.click{
+	background-color: #555;
+	width:100%;
+	border:none;
+	height:40px;
+	color:#fff;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+}
+#sleep-btn{
+	display: none;
+};

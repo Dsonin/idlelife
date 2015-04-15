@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatile" content="IE=edge">
+		<meta name="viewport" content="width=device-width, Initial-scale=1">
+		<title>Idle Life</title>
+		<link rel="stylesheet" type="css" href="css/bootstrap.min.css">
+		
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/game.js"></script>
+	</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-md-6">
+				<h1>Idle Life</h1>
+			</div>
+			<div class="col-md-6 text-right">
+				<ul>
+					<li>Home</li>
+					<li>Farm Clicker</li>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-2 text-left" id="clickers">
+				<h2>Do Stuff</h2>
+				<button class="click text-uppercase" onclick="study(1)">Study</button><br />
+				<button class="click text-uppercase" onclick="work(1)">Work for <span id="shift"></span> hrs</button><br />
+				<button class="click text-uppercase" onclick="makeCode(1)">Code</button><br />
+				<button class="click text-uppercase" onclick="drink(1)">Drink</button><br />
+				<button class="click text-uppercase" id="sleep-btn" onclick="fuckMe(1)">Sleep for <span id="sleep"></span> hrs</button><br />
+			</div>
+			<div class="col-md-8 text-center border-reg" id="game-window">
+				<div id="alert">
+				<p id="alert-message"> </p>
+				</div>
+				<h2>Stats</h2>
+				<p id="alert-warning"> </p>
+				<p>Here's where you can see your stats</p>
+
+				<table class="table">
+					<thead>Stats</thead>
+						<tr>
+							<td>Stamina</td>
+							<td><span id="stamina">100</span></td>
+						</tr>
+						<tr>
+							<td>Money</td>
+							<td>$<span id="money">500</span></td>
+						</tr>
+						<tr>
+							<td>Street Cred</td>
+							<td><span id="cred">50</span></td>
+						</tr>
+						<tr>
+							<td>Wage</td>
+							<td>$<span id="wage">8</span>/hr</td>
+						</tr>
+						<tr>
+							<td>Happiness</td>
+							<td><span id="happiness">50</span></td>
+						</tr>
+						<tr>
+							<td>Social Life</td>
+							<td><span id="social">3</span> friends</td>
+						</tr>
+						<tr>
+							<td>Functions</td>
+							<td><span id="code"></span></td>
+						</tr>
+						<tr>
+							<td>Apps</td>
+							<td><span id="codeTotal"></span></td>
+						</tr>
+						
+				</table>
+			</div>
+			<div class="col-md-2 text-right" id="upgrades">
+				<h1><span id="timer"></span></h1>
+				<h2>Upgrade Stuff</h2>
+			</div>
+		</div>
+
+		<div class="row">
+		</div>
+
+	</div>
+
+
+</body>
+
+</html>
