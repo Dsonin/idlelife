@@ -1,6 +1,6 @@
 
 //setting primary stats that will affect growth rate
-window.onload=function getBorn(){
+function getBorn(){
 	var luck = Math.ceil(Math.random()*6);
 	var iQ = 0;
 	var intelligence = 0;

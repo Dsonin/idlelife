@@ -13,45 +13,50 @@
 	</head>
 
 <body>
+
     <div class="header container-fluid">
         <h1>Idle Life</h1>
-        <div id="game-start"><button class="click text-uppercase" id="start">Get Born</button>
+        <p><button id="changeName">What's your name?</button></p>
     </div>
-	<div class="container" id="game-window">
 
+	<div class="container" id="gamewindow">
 		<div class="row">
-
-			<div class="col-md-6">
-				<h1>Idle Life</h1>
-			</div>
-			<div class="col-md-6 text-right">
-				<ul>
-					<li>Home</li>
-					<li>Farm Clicker</li>
+			<div class="col-md-12 text-center">
+			    <div id="yourInfo">
+			    <h2>Your name is <span id="userName"></span> and you have an IQ of <span id="iq"></span></h2>
+			    </div>
+			    <div id="alert">
+				<p id="alert-message" class="text-center"> </p>
+				</div>
 			</div>
 		</div>
-		<!-- insert modal to ask for name! -->
-
 		<div class="row">
-			<div class="col-md-2 text-left" id="clickers">
-				<h2>Do Stuff</h2>
-				<button class="click text-uppercase">Learn to Sit Up</button><br />
-				<button class="click text-uppercase" id="study">Study</button><br />
-				<button class="click text-uppercase" id="work">Work for <span id="shift"></span> hrs</button><br />
-				<button class="click text-uppercase" id="makeCode">Code</button><br />
-				<button class="click text-uppercase" id="drink">Drink</button><br />
-				<button class="click text-uppercase" id="sleep-btn">Sleep for <span id="sleep"></span> hrs</button><br />
-			</div>
-			<div class="col-md-8 text-center border-reg">
-				<div id="alert">
-				<p id="alert-message"> </p>
-				</div>
-				<h2>Stats</h2>
-				<p id="alert-warning"> </p>
-				<p>Here's where you can see your stats</p>
-
+		    <div class="col-md-2">
+		        <h3>Stats</h3>
+		    </div>
+		    <div class="col-md-2">
+		        <h3>Learn</h3>
+		    </div>
+		    <div class="col-md-2">
+		        <h3>Hobbies</h3>
+		    </div>
+		    <div class="col-md-2">
+		        <h3>Stuff</h3>
+		    </div>
+		    <div class="col-md-2">
+		        <h3>Things</h3>
+		    </div>
+		    <div class="col-md-2">
+		    </div>
+		</div>
+		<div class="row">
+		    <div class="col-md-2 text-center border-reg">
 				<table class="table">
 					<thead>Stats</thead>
+					    <tr>
+					        <td>Age</td>
+					        <td><span id="timer"></span></td>
+					    </tr>
 					    <tr>
 					        <td>Intelligence</td>
 					        <td><span id="intelligence"></span></td>
@@ -59,6 +64,10 @@
 						<tr>
 							<td>Stamina</td>
 							<td><span id="stamina"></span></td>
+						</tr>
+						<tr>
+						    <td>Hunger</td>
+						    <td><span id="hunger"></span></td>
 						</tr>
 						<tr>
 							<td>Money</td>
@@ -77,7 +86,7 @@
 							<td><span id="happiness"></span></td>
 						</tr>
 						<tr>
-							<td>Social Life</td>
+							<td>Friends</td>
 							<td><span id="social"></span></td>
 						</tr>
 						<tr>
@@ -91,18 +100,36 @@
 						
 				</table>
 			</div>
-			<div class="col-md-2 text-right" id="upgrades">
-				<h1><span id="timer"></span></h1>
-				<h2>Upgrade Stuff</h2>
+			<div class="col-md-2 text-left" id="clickers">
+				<button class="click text-uppercase" id="sitUp">Learn to Sit Up</button>
+				<button class="click text-uppercase" id="crawl">Learn to Crawl</button>
+				<button class="click text-uppercase" id="learnWalk">Learn to Walk</button>
+				<button class="click text-uppercase" id="learnTalk">Learn to Talk</button>
+				<button class="click text-uppercase" id="elementary">Go to school</button>
+			</div>
+			<div class="col-md-2">
+				<button class="click text-uppercase" id="lookAbout">Look Around</button>
+				<button class="click text-uppercase" id="play">Play</button>
+				<button class="click text-uppercase" class="elementaryButtons" id="study">Study</button>
+			</div>
+			<div class="col-md-2">
+			    <button class="click text-uppercase" id="eat">Eat</button>
+			    <button class="click text-uppercase" id="sleep-btn">Sleep</button>
+				<button class="click text-uppercase" class="elementaryButtons" id="work">Work for <span id="shift"></span> hrs</button>
+				<button class="click text-uppercase" class="elementaryButtons" id="makeCode">Code</button>
+				<button class="click text-uppercase" class="college-buttons" id="drink">Drink</button>
+			</div>
+			<div class="col-md-2 text-right">
+			    <div id="friendsShow"><button class="click text-uppercase" id="makeFriends">Make a friend</button></div>
 			</div>
 		</div>
-
 		<div class="row">
 		</div>
 	</div>
+
 	<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
